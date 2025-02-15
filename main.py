@@ -10,6 +10,7 @@ api = FastAPI(
 
 users_data = {}
 
+
 @api.post("/users", tags=["Users"])
 async def user_sign_up(data: dict):
     user_id = str(uuid.uuid4())
