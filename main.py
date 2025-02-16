@@ -42,6 +42,7 @@ async def user_sign_up(data: dict):
 async def get_user(user_id: str):
     user = users_data.get(user_id)
 
+
     if user is None:
         raise HTTPException(
             status_code=status.HTTP_404_NOT_FOUND,
